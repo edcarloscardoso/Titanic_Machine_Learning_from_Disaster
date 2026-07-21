@@ -67,11 +67,13 @@ Alinhado ao plano estratégico, o desenvolvimento seguiu uma **investigação ci
 git clone https://github.com/edcarloscardoso/Titanic_Machine_Learning_from_Disaster.git
 cd Titanic_Machine_Learning_from_Disaster
 
-# 2. Criar ambiente virtual e instalar dependências
-python3 -m venv venv
-source venv/bin/activate
+# 2. Criar ambiente virtual (.venv) e ativar
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 3. Instalar as dependências
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-# 3. Abrir o Jupyter Notebook
+# 4. Abrir o Jupyter Notebook
 jupyter notebook Desafios_InsurMinds/titanic_solucao_desafio3.ipynb
 ```
