@@ -17,5 +17,6 @@ __pycache__/
 .vscode/
 
 # Documents
-*.pdf
+!Desafios_InsurMinds/Relatorio_Iteracoes_Titanic.pdf
+
 
