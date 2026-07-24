@@ -9,8 +9,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR)
 
-MD_PATH  = "/home/edcarlos/.gemini/antigravity-ide/brain/7a364a69-01d3-452a-bf10-9f864390e810/relatorio_titanic_iteracoes.md"
-PDF_PATH = os.path.join(ROOT_DIR, "Desafios_InsurMinds", "Relatorio_Iteracoes_Titanic.pdf")
+MD_PATH  = os.path.join(BASE_DIR, "relatorio_titanic_iteracoes.md")
+PDF_PATH = os.path.join(BASE_DIR, "Relatorio_Iteracoes_Titanic.pdf")
 
 # ── 1. Ler o Markdown ────────────────────────────────────────────────────────
 with open(MD_PATH, "r", encoding="utf-8") as f:
@@ -161,17 +161,14 @@ html_template = f"""<!DOCTYPE html>
   }}
 
   ul, ol {{
-    margin-bottom: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
     padding-left: 22px;
   }}
 
   li {{
-    margin-bottom: 4px;
-  }}
-
-  /* Info box para metadados do projeto */
-  p:has(strong:first-child) {{
-    margin-bottom: 3px;
+    margin-bottom: 6px;
+    line-height: 1.6;
   }}
 
   /* Emoji styling - mais sutil */
